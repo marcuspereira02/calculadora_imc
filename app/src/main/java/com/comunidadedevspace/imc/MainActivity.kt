@@ -1,5 +1,6 @@
 package com.comunidadedevspace.imc
 
+import android.content.Intent
 import android.health.connect.datatypes.units.Length
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -27,6 +28,10 @@ class MainActivity : AppCompatActivity() {
                 val altura = alturaStr.toFloat()
 
                 val resultado: Float = peso / (altura * altura)
+
+                val intent = Intent(this, ResultActivity2::class.java)
+                intent.putExtra(KEY_RESULT_IMC, resultado)
+                startActivity(intent)
             }
         }
     }
