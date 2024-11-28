@@ -1,35 +1,79 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:gravity="center"
     tools:context=".ResultActivity2">
 
-    <TextView
-        android:id="@+id/tv_result"
-        android:gravity="center"
-        android:layout_width="wrap_content"
-        android:maxLength="5"
+    <LinearLayout
+        android:id="@+id/vg_header"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textSize="40sp"
-        android:textStyle="bold"
-        tools:text="23.66" />
+        android:background="@drawable/gradient_bg"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/ic_weight"
+            app:tint="@color/white"
+            android:layout_marginTop="16dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginBottom="16dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="24dp"
+            android:textStyle="bold"
+            android:gravity="start"
+            android:layout_marginStart="24dp"
+            android:textColor="@color/white"
+            android:text="Calculadora IMC" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:textColor="@color/white"
+            android:layout_marginStart="24dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="24dp"
+            android:layout_marginBottom="24dp"
+            android:text="Confirma abaixo o resultado do IMC e a classificação:"/>
+
+
+        <TextView
+            android:id="@+id/tv_result"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:maxLength="5"
+            android:layout_height="wrap_content"
+            android:textSize="64sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="48dp"
+            android:textColor="@color/white"
+            android:layout_gravity="center"
+            tools:text="23.66" />
+    </LinearLayout>
 
     <TextView
         android:id="@+id/tv_classificacao_label"
         android:gravity="center"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="160dp"
         android:text="A classificação do seu IMC é:" />
 
     <TextView
         android:id="@+id/tv_classificacao"
-        android:gravity="center"
+        android:textSize="24sp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textStyle="bold"
+        android:layout_gravity="center"
         tools:text="NORMAL" />
 </LinearLayout>
