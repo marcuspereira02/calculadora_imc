@@ -1,6 +1,12 @@
 # Calculadora IMC
 Esse projeto é um aplicativo Android nativo desenvolvido com a linguagem de programação Kotlin, sua principal finalidade é fazer o cálculo do IMC e mostrar o resultado na tela seguinte.
 
+
+## 🚀 Funcionalidades
+- 💡 Cálculo do IMC: Insira sua altura e peso para obter seu IMC instantaneamente.
+- 📊 Classificação de Saúde: Veja em qual faixa de IMC você se encontra (magreza, normal, sobrepeso, obesidade I, obesidade II e obesidade III).
+- 🎨 Interface Amigável: Design simples e intuitivo para uma ótima experiência do usuário.
+
 ## :camera_flash: Screenshots
 <!-- You can add more screenshots here if you like -->
 <img src="https://github.com/user-attachments/assets/a898d3a6-3030-4d24-9c1a-45d77fe9a3fd" width=200/>
@@ -8,7 +14,7 @@ Esse projeto é um aplicativo Android nativo desenvolvido com a linguagem de pro
 <img src="https://github.com/user-attachments/assets/fa49e658-a2d0-4799-a5f0-7fcd9bc22ceb" width=200/>
 
 
-## Tecnologias
+## 🛠️ Tecnologias
 - Activity
 - Intent
 - Snackbar
