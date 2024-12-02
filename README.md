@@ -4,7 +4,7 @@ Esse projeto é um aplicativo Android nativo desenvolvido com a linguagem de pro
 
 ## 🚀 Funcionalidades
 - 💡 Cálculo do IMC: Insira sua altura e peso para obter seu IMC instantaneamente.
-- 📊 Classificação de Saúde: Veja em qual faixa de IMC você se encontra (magreza, normal, sobrepeso, obesidade I, obesidade II e obesidade III).
+- 📊 Classificação de Saúde: Veja em qual faixa de IMC você se encontra (MAGREZA, NORMAL, SOBREPRESO, OBESIDADE I, OBESIDADE II e OBESIDADE III).
 - 🎨 Interface Amigável: Design simples e intuitivo para uma ótima experiência do usuário.
 
 ## :camera_flash: Screenshots
