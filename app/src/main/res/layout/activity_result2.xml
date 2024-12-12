@@ -65,7 +65,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:layout_marginTop="160dp"
+        android:layout_marginTop="130dp"
         android:text="A classificação do seu IMC é:" />
 
     <TextView
@@ -76,4 +76,29 @@
         android:textStyle="bold"
         android:layout_gravity="center"
         tools:text="NORMAL" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/btn_novoCalculo"
+            android:layout_width="185dp"
+            android:layout_margin="10dp"
+            android:layout_height="wrap_content"
+            android:text="Novo cálculo"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <Button
+            android:id="@+id/btn_tabelaIMC"
+            android:layout_width="185dp"
+            android:layout_margin="10dp"
+            android:layout_height="wrap_content"
+            android:text="Tabela IMC"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
 </LinearLayout>

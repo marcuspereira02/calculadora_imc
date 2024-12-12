@@ -1,6 +1,8 @@
 package com.comunidadedevspace.imc
 
+import android.content.Intent
 import android.os.Bundle
+import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
 import androidx.activity.enableEdgeToEdge
@@ -18,13 +20,16 @@ class ResultActivity2 : AppCompatActivity() {
 
         val result = intent.getFloatExtra(KEY_RESULT_IMC, 0f)
 
+        val btnNovoCalculo = findViewById<Button>(R.id.btn_novoCalculo)
+        val btnTabelaImc = findViewById<Button>(R.id.btn_tabelaIMC)
+
         val tvResult = findViewById<TextView>(R.id.tv_result)
         var tvClassificacao = findViewById<TextView>(R.id.tv_classificacao)
 
         tvResult.text = result.toString()
 
         if(result < 18.6){
-                tvClassificacao.text = "MAGREZA"
+                tvClassificacao.text = "ABAIXO DO PESO"
             tvClassificacao.setTextColor(ContextCompat.getColor( this, R.color.red))
             }else if (result > 18.5 && result < 25){
                 tvClassificacao.text = "NORMAL"
@@ -42,5 +47,17 @@ class ResultActivity2 : AppCompatActivity() {
                 tvClassificacao.text = "OBESIDADE III"
             tvClassificacao.setTextColor(ContextCompat.getColor( this, R.color.red))
             }
+
+        btnNovoCalculo.setOnClickListener {
+            val intent = Intent(this,MainActivity :: class.java)
+            intent.putExtra(KEY_MAIN_ACTIVITY, "")
+            startActivity(intent)
+        }
+
+        btnTabelaImc.setOnClickListener {
+            val intent = Intent(this, TableIMCActivity::class.java)
+            intent.putExtra(KEY_TABLE_IMC, "")
+            startActivity(intent)
+        }
         }
     }
