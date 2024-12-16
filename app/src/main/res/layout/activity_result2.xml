@@ -62,6 +62,8 @@
     <TextView
         android:id="@+id/tv_classificacao_label"
         android:gravity="center"
+        android:textSize="20sp"
+        android:textColor="@color/black"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
@@ -70,21 +72,34 @@
 
     <TextView
         android:id="@+id/tv_classificacao"
-        android:textSize="24sp"
+        android:textSize="35sp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textStyle="bold"
         android:layout_gravity="center"
-        tools:text="NORMAL" />
+        tools:text="ABAIXO DO PESO" />
+
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
+        <TextView
+            android:id="@+id/tv_sugestao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="45dp"
+            android:gravity="center"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="Seu IMC indica que você está abaixo do peso ideal. Que tal buscar orientação de um nutricionista para cuidar melhor da sua saúde?" />
+
         <Button
             android:id="@+id/btn_novoCalculo"
-            android:layout_width="185dp"
-            android:layout_margin="10dp"
+            android:layout_width="200dp"
+            android:layout_margin="16dp"
             android:layout_height="wrap_content"
             android:text="Novo cálculo"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -92,8 +107,8 @@
 
         <Button
             android:id="@+id/btn_tabelaIMC"
-            android:layout_width="185dp"
-            android:layout_margin="10dp"
+            android:layout_width="200dp"
+            android:layout_margin="16dp"
             android:layout_height="wrap_content"
             android:text="Tabela IMC"
             app:layout_constraintBottom_toBottomOf="parent"
