@@ -36,27 +36,190 @@
     </LinearLayout>
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/tv_class"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="45dp"
         android:layout_marginTop="50dp"
         android:text="Classificação"
-        android:textSize="15sp"
+        android:textSize="20sp"
         android:textColor="@color/black"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
 
     <TextView
+        android:id="@+id/tv_imcKg"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="IMC(KG/m²)"
         android:textStyle="bold"
-        android:textSize="15sp"
+        android:textSize="20sp"
         android:textColor="@color/black"
         android:layout_marginEnd="50dp"
-        app:layout_constraintBaseline_toBaselineOf="@+id/textView2"
+        app:layout_constraintBaseline_toBaselineOf="@+id/tv_class"
         app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_menor18"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Menor que 18.6"
+        android:textColor="@color/black"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="15dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_class" />
+
+    <TextView
+        android:id="@+id/tv_entre18e24"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Entre 18.6 e 24.9"
+        android:textColor="@color/black"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="15dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_menor18" />
+
+    <TextView
+        android:id="@+id/tv_entre25e29"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Entre 25 e 29.9"
+        android:textColor="@color/black"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="15dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_entre18e24" />
+
+    <TextView
+        android:id="@+id/tv_entre30e34"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Entre 30 e 34.9"
+        android:textColor="@color/black"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="15dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_entre25e29" />
+
+    <TextView
+        android:id="@+id/tv_entre35e39"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Entre 35 e 39.9"
+        android:textColor="@color/black"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="15dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_entre30e34" />
+
+    <TextView
+        android:id="@+id/tv_40"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Maior ou igual a 40"
+        android:textColor="@color/black"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="15dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_entre35e39" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Abaixo do peso"
+        android:textColor="@color/black"
+        android:layout_marginEnd="50dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBaseline_toBaselineOf="@+id/tv_menor18"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Normal"
+        android:textColor="@color/black"
+        android:layout_marginEnd="50dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBaseline_toBaselineOf="@+id/tv_entre18e24"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sobrepeso"
+        android:textColor="@color/black"
+        android:layout_marginEnd="50dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBaseline_toBaselineOf="@+id/tv_entre25e29"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Obesidade I"
+        android:textColor="@color/black"
+        android:layout_marginEnd="50dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBaseline_toBaselineOf="@+id/tv_entre30e34"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Obesidade II"
+        android:textColor="@color/black"
+        android:layout_marginEnd="50dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBaseline_toBaselineOf="@+id/tv_entre35e39"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Obesidade III"
+        android:textColor="@color/black"
+        android:layout_marginEnd="50dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBaseline_toBaselineOf="@+id/tv_40"/>
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="145dp"
+        android:layout_marginTop="50dp"
+        android:text="O seu IMC é:"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_40" />
+
+    <TextView
+        android:id="@+id/tv_tableImc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="150dp"
+        android:textSize="50sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3"
+        tools:text="19.9" />
+
+    <Button
+        android:id="@+id/btn_novoCalculoTable"
+        android:layout_width="187dp"
+        android:layout_margin="10dp"
+        android:layout_height="wrap_content"
+        android:text="Novo cálculo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btn_resultadoImc"
+        android:layout_width="187dp"
+        android:layout_margin="10dp"
+        android:layout_height="wrap_content"
+        android:text="Retornar ao resultado"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
